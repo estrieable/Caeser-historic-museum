@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url("../css/_blocks/_header.css");
-
-@import url("../css/_blocks/_home.css");
-@import url("../css/_blocks/_news.css");
-@import url("../css/_blocks/_about.css");
-@import url("../css/_blocks/_gallery.css");
-@import url("../css/_blocks/_location.css");
-
-@import url("../css/_blocks/_footer.css");
+@import url("./_blocks/_header.css");
+@import url("./_blocks/_home.css");
+@import url("./_blocks/_news.css");
+@import url("./_blocks/_about.css");
+@import url("./_blocks/_gallery.css");
+@import url("./_blocks/_location.css");
+@import url("./_blocks/_footer.css");
 
 @import url("../css/variables.css");
 
