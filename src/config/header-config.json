@@ -1,0 +1,20 @@
+{
+    "nav": [
+        {
+            "name": "News",
+            "path": "#"
+        },
+        {
+            "name": "About",
+            "path": "#"
+        },
+        {
+            "name": "Gallery",
+            "path": "#"
+        },
+        {
+            "name": "Location",
+            "path": "#"
+        }
+    ]
+}

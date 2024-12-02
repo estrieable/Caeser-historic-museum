@@ -1,0 +1,32 @@
+{
+    "content": [
+        {
+            "title": "Opening hours",
+            "Daily": "Daily: 10.00–17.00 (Fridays: 20.30)",
+            "Last entry": "Last entry: 16.00 (Fridays: 19.30)",
+            "Work By": "Work By BelHard © 2024"
+        }
+    ],
+    "links": [
+        {
+            "name": "LinkedIn",
+            "path": "#"
+        },
+        {
+            "name": "Meta",
+            "path": "#"
+        },
+        {
+            "name": "YouTube",
+            "path": "#"
+        },
+        {
+            "name": "X",
+            "path": "#"
+        },
+        {
+            "name": "Instagram",
+            "path": "#"
+        }
+    ]
+}
