@@ -1,0 +1,49 @@
+.main {
+    width: 1460px;
+    height: 824px;
+    margin: 0 auto;
+    background: rgb(26, 23, 23);
+}
+
+
+
+.explore-block {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.text {
+    color: var(--text-color);
+}
+.title {
+    color: var(--title-color);
+    font-weight: 600;
+}
+.explore-text {
+    font-size: 24px;
+}
+.explore-title {
+    font-size: 56px;
+}
+.explore-block-content {
+    margin-top: auto;
+    position: relative;
+}
+.explore-elipse {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+}
+.explore-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+}
