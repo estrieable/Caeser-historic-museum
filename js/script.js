@@ -1,7 +1,7 @@
 // Отображение данных Explore_____________________________
 async function loadExploreData() {
     try {
-        const response = await fetch('../src/config/main-config.json');
+        const response = await fetch('../config/main-config.json');
         const data = await response.json();
 
         const exploreTextElement = document.querySelector('.explore-text');
