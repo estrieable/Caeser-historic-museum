@@ -1,6 +1,6 @@
 .sculpture-info-block {
-    height: 800px;
-    /* background: rgb(57, 54, 54); */
+    height: 840px;
+    position: relative;
 }
 .sculpture-item-description {
     max-width: 183px;
@@ -33,18 +33,40 @@
 }
 
 .sculpture-item-description {
-    transform: translateY(260px);
+    transform: translateY(270px);
     opacity: 0;
 }
+.sculpture-text {
+    margin-top: 10px;
+}
 .sculpture-img {
-    transform: translateY(-260px);
+    margin-top: 20px;
+    transform: translateY(-270px);
     opacity: 0;
 }
 
 .sculpture-item-description.animate,
 .sculpture-img.animate {
-    animation: lookSculpture 1s linear forwards;
+    animation: lookSculpture 1s ease-in-out forwards;
 }
+
+.sculpture-flow-1 {
+    position: absolute;
+    top: 200px;
+}
+.sculpture-flow-2 {
+    position: absolute;
+    top: 190px;
+}
+.sculpture-flow-3 {
+    position: absolute;
+    top: 180px;
+}
+.sculpture-flow-4 {
+    position: absolute;
+    top: 170px;
+}
+
 
 @keyframes lookSculpture {
     100% {
