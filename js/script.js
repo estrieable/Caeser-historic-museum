@@ -41,13 +41,17 @@ async function loadHomeData() {
         const exploreContentText2 = document.querySelector(".explore-text-sculpture-2-text");
         const exploreContentText3 = document.querySelector(".explore-text-sculpture-3-text");
         const exploreContentText4 = document.querySelector(".explore-text-sculpture-4-text");
+        const aboutTitle = document.querySelector(".about-block-title");
+        const aboutDescription = document.querySelector(".about-block-description");
 
         exploreTextElement.textContent = data.explore[0]['explore-text'];
         exploreTitleElement.textContent = data.explore[0]['explore-title'];
         exploreContentText1.textContent = data.explore[0]['explore-content-text-1'];
         exploreContentText2.textContent = data.explore[0]['explore-content-text-2'];
         exploreContentText3.textContent = data.explore[0]['explore-content-text-3'];
-        exploreContentText4.textContent = data.explore[0]['explore-content-text-4'];
+        exploreContentText4.textContent = data.explore[0]['explore-content-text-3'];
+        aboutTitle.textContent = data.about[0]['title'];
+        aboutDescription.textContent = data.about[0]['description'];
     } catch (error) {
         console.error('Error loading data:', error);
     }
@@ -92,6 +96,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.observe(sculptureItemDescription);
                 observer.observe(img);
             });
+        })
+        .catch(error => console.error('Error loading the JSON:', error));
+});
+
+// Отображение данных About___________________________________
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('./config/main-config.json')
+        .then(response => response.json())
+        .then(data => {
+            const aboutData = data.about[0];
+            
+            const textContentElement = document.querySelector('.about-text-content');
+            
+            for (let i = 1; i <= 10; i++) {
+                const paragraph = document.createElement('p');
+                const textKey = `text-${i}`;
+                if (aboutData[textKey]) {
+                    paragraph.textContent = aboutData[textKey];
+                    textContentElement.appendChild(paragraph);
+                }
+            }
         })
         .catch(error => console.error('Error loading the JSON:', error));
 });
