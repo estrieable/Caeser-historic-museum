@@ -2,7 +2,43 @@
     "explore": [
         {
             "explore-text": "Explore the world of",
-            "explore-title": "Classical Sculptures."
+            "explore-title": "Classical Sculptures.",
+            "explore-content-text-1": "Classical sculpture refers generally to sculpture from Ancient Greece and Ancient Rome, as well as the Hellenized and Romanized civilizations under their rule or influence, from about 500 BC to around 200 AD.",
+            "explore-content-text-2": "Leochares, Greek sculptor to whom the Apollo Belvedere is often attributed",
+            "explore-content-text-3": "Laocoön and His Sons, also known as the Laocoön Group.",
+            "explore-content-text-4": "A Marble Head of Zeus, Roman Imperial, late 1st/2nd Century A.D"
+        }
+    ],
+    "info": [
+        {
+            "title": "Roman marble reproduction of Myron's Discobolus, 2nd century AD",
+            "description": "The Body Beautiful in Ancient Greece is a major international touring exhibition which features treasures from the British Museum’s rich Greek and Roman collection. Currently on show at the Dallas Museum of Art (until October 6, 2013), the exhibition will then be featured at the Bendigo Art Gallery (Australia), opening in August 2014. Previously, it had been presented at the Portland Art Museum (October 6, 2012-January 6, 2013).",
+            "src": "img/info/info-1.svg"
+        },
+        {
+            "title": "Roman marble reproduction of Myron's Discobolus, 2nd century AD",
+            "description": "The Body Beautiful in Ancient Greece is a major international touring exhibition which features treasures from the British Museum’s rich Greek and Roman collection. Currently on show at the Dallas Museum of Art (until October 6, 2013), the exhibition will then be featured at the Bendigo Art Gallery (Australia), opening in August 2014. Previously, it had been presented at the Portland Art Museum (October 6, 2012-January 6, 2013).",
+            "src": "img/info/info-2.svg"
+        },
+        {
+            "title": "Roman marble reproduction of Myron's Discobolus, 2nd century AD",
+            "description": "The Body Beautiful in Ancient Greece is a major international touring exhibition which features treasures from the British Museum’s rich Greek and Roman collection. Currently on show at the Dallas Museum of Art (until October 6, 2013), the exhibition will then be featured at the Bendigo Art Gallery (Australia), opening in August 2014. Previously, it had been presented at the Portland Art Museum (October 6, 2012-January 6, 2013).",
+            "src": "img/info/info-3.svg"
+        },
+        {
+            "title": "Roman marble reproduction of Myron's Discobolus, 2nd century AD",
+            "description": "The Body Beautiful in Ancient Greece is a major international touring exhibition which features treasures from the British Museum’s rich Greek and Roman collection. Currently on show at the Dallas Museum of Art (until October 6, 2013), the exhibition will then be featured at the Bendigo Art Gallery (Australia), opening in August 2014. Previously, it had been presented at the Portland Art Museum (October 6, 2012-January 6, 2013).",
+            "src": "img/info/info-4.svg"
+        },
+        {
+            "title": "Roman marble reproduction of Myron's Discobolus, 2nd century AD",
+            "description": "The Body Beautiful in Ancient Greece is a major international touring exhibition which features treasures from the British Museum’s rich Greek and Roman collection. Currently on show at the Dallas Museum of Art (until October 6, 2013), the exhibition will then be featured at the Bendigo Art Gallery (Australia), opening in August 2014. Previously, it had been presented at the Portland Art Museum (October 6, 2012-January 6, 2013).",
+            "src": "img/info/info-5.svg"
+        },
+        {
+            "title": "Roman marble reproduction of Myron's Discobolus, 2nd century AD",
+            "description": "The Body Beautiful in Ancient Greece is a major international touring exhibition which features treasures from the British Museum’s rich Greek and Roman collection. Currently on show at the Dallas Museum of Art (until October 6, 2013), the exhibition will then be featured at the Bendigo Art Gallery (Australia), opening in August 2014. Previously, it had been presented at the Portland Art Museum (October 6, 2012-January 6, 2013).",
+            "src": "img/info/info-6.svg"
         }
     ]
 }

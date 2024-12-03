@@ -2,7 +2,8 @@
 
 @import url("./_blocks/_header.css");
 @import url("./_blocks/_home.css");
-@import url("./_blocks/_news.css");
+@import url("./_blocks/_info.css");
+@import url("./_blocks/_faq.css");
 @import url("./_blocks/_about.css");
 @import url("./_blocks/_gallery.css");
 @import url("./_blocks/_location.css");
@@ -22,4 +23,17 @@ body {
     font-style: normal;
     font-size: 12px;
     background: var(--background-color);
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #292929;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #292929;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #3e3e3e;
 }
