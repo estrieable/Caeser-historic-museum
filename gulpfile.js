@@ -6,8 +6,12 @@ const sourcemaps = require('gulp-sourcemaps');
 // Путь к CSS файлам
 const paths = {
     styles: {
-        src: 'css/_blocks/*.css', // Путь к вашим блокам CSS
-        dest: 'dist/css/'          // Куда сохранить итоговый файл
+        src: [
+            'css/style.css',                // Путь к style.css
+            'css/variables.css',            // Путь к variables.css
+            'css/_blocks/*.css'             // Путь к вашим блокам CSS
+        ],
+        dest: 'dist/css/'                 // Куда сохранить итоговый файл
     }
 };
 
