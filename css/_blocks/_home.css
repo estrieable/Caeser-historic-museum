@@ -2,11 +2,11 @@
     width: 1460px;
     height: 824px;
     margin: 0 auto;
-    background: rgb(26, 23, 23);
 }
 
 
 
+/* Explore Block__________________________________________ */
 .explore-block {
     margin-top: 190px;
     display: flex;
@@ -38,6 +38,7 @@
     transform: translateX(-50%);
     max-width: 100%;
     height: auto;
+    animation: flicker 5s linear infinite;
 }
 .explore-img {
     position: absolute;
@@ -46,4 +47,85 @@
     transform: translateX(-50%);
     max-width: 100%;
     height: auto;
+}
+.explore-text-sculpture-1-img,
+.explore-text-sculpture-2,
+.explore-text-sculpture-3,
+.explore-text-sculpture-4 {
+    display: flex;
+}
+.explore-text-sculpture-1-img img,
+.explore-text-sculpture-2 img,
+.explore-text-sculpture-3 img,
+.explore-text-sculpture-4 img {
+    display: block;
+}
+.explore-text-sculpture-2 img,
+.explore-text-sculpture-3 img,
+.explore-text-sculpture-4 img {
+    margin-top: 3px;;
+}
+.explore-text-sculpture-2-text,
+.explore-text-sculpture-3-text,
+.explore-text-sculpture-4-text {
+    margin-left: 5px;
+}
+.explore-text-sculpture-1-text {
+    font-size: 17px;
+    max-width: 420px;
+}
+.explore-text-sculpture-2-text {
+    max-width: 234px;
+}
+.explore-text-sculpture-3-text {
+    max-width: 247px;
+}
+.explore-text-sculpture-4-text {
+    max-width: 207px;
+}
+.explore-text-sculpture-1 {
+    position: absolute;
+    top: 420px;
+    right: 300px;
+    opacity: 0;
+}
+.explore-text-sculpture-2 {
+    position: absolute;
+    top: 500px;
+    left: 360px;
+    opacity: 0;
+}
+.explore-text-sculpture-3 {
+    position: absolute;
+    top: 820px;
+    left: 180px;
+    opacity: 0;
+}
+.explore-text-sculpture-4 {
+    position: absolute;
+    top: 920px;
+    right: 200px;
+    opacity: 0;
+}
+.explore-text-sculpture-1.animate,
+.explore-text-sculpture-2.animate,
+.explore-text-sculpture-3.animate,
+.explore-text-sculpture-4.animate {
+    animation: lookText 3s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes lookText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
 }

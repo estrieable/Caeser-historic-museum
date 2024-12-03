@@ -1,0 +1,54 @@
+.sculpture-info-block {
+    height: 800px;
+    /* background: rgb(57, 54, 54); */
+}
+.sculpture-item-description {
+    max-width: 183px;
+}
+.sculpture-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+}
+.sculpture-item:nth-child(1) {
+    margin-top: 210px;
+}
+.sculpture-item:nth-child(2) {
+    margin-top: 120px;
+}
+.sculpture-item:nth-child(3) {
+    margin-top: 220px;
+}
+.sculpture-item:nth-child(4) {
+    margin-top: 320px;
+}
+.sculpture-item:nth-child(5) {
+    margin-top: 70px;
+}
+.sculpture-item:nth-child(6) {
+    margin-top: 220px;
+}
+
+.sculpture-item-description {
+    transform: translateY(260px);
+    opacity: 0;
+}
+.sculpture-img {
+    transform: translateY(-260px);
+    opacity: 0;
+}
+
+.sculpture-item-description.animate,
+.sculpture-img.animate {
+    animation: lookSculpture 1s linear forwards;
+}
+
+@keyframes lookSculpture {
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
