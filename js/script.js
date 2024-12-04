@@ -67,7 +67,7 @@ async function loadHomeData() {
         exploreContentText1.textContent = data.explore[0]['explore-content-text-1'];
         exploreContentText2.textContent = data.explore[0]['explore-content-text-2'];
         exploreContentText3.textContent = data.explore[0]['explore-content-text-3'];
-        exploreContentText4.textContent = data.explore[0]['explore-content-text-3'];
+        exploreContentText4.textContent = data.explore[0]['explore-content-text-4'];
         aboutTitle.textContent = data.about[0]['title'];
         aboutDescription.textContent = data.about[0]['description'];
         faqTitle.textContent = data.faq[0]['title'];

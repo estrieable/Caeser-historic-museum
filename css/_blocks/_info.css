@@ -253,3 +253,99 @@
         opacity: 0;
     }
 }
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .sculpture-grid {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sculpture-info-block {
+        height: 1300px;
+    }
+    .sculpture-item:nth-child(1) {
+        margin-top: 150px;
+    }
+    .sculpture-item:nth-child(2) {
+        margin-top: 60px;
+    }
+    .sculpture-item:nth-child(3) {
+        margin-top: 160px;
+    }
+    .sculpture-item:nth-child(4) {
+        margin-top: 120px;
+    }
+    .sculpture-item:nth-child(5) {
+        margin-top: 70px;
+    }
+    .sculpture-item:nth-child(6) {
+        margin-top: 130px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .sculpture-grid {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sculpture-info-block {
+        height: 1860px;
+    }
+    .sculpture-item:nth-child(1) {
+        margin-top: 100px;
+    }
+    .sculpture-item:nth-child(2) {
+        margin-top: 20px;
+    }
+    .sculpture-item:nth-child(3) {
+        margin-top: 80px;
+    }
+    .sculpture-item:nth-child(4) {
+        margin-top: 10px;
+    }
+    .sculpture-item:nth-child(5) {
+        margin-top: 50px;
+    }
+    .sculpture-item:nth-child(6) {
+        margin-top: 0px;
+    }
+    .sculpture-item-description {
+        max-width: 163px;
+    }
+}
+
+
+/* Адаптируем под разрешение до 425px */
+@media (max-width: 425px) {
+    .sculpture-item-description {
+        max-width: 300px;
+    }
+    .sculpture-grid {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .sculpture-info-block {
+        height: 2370px;
+    }
+    .sculpture-item:nth-child(1) {
+        margin-top: 20px;
+    }
+    .sculpture-item:nth-child(2) {
+        margin-top: 0px;
+    }
+    .sculpture-item:nth-child(3) {
+        margin-top: 20px;
+    }
+    .sculpture-item:nth-child(4) {
+        margin-top: -25px;
+    }
+    .sculpture-item:nth-child(5) {
+        margin-top: -50px;
+    }
+    .sculpture-item:nth-child(6) {
+        margin-top: 0px;
+    }
+}

@@ -25,3 +25,23 @@
         opacity: 1;
     }
 }
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .about-block {
+        padding: 30px 60px;
+    }
+}
+/* Адаптируем под разрешение от 768 до 1024px */
+@media (max-width: 1024px) {
+    .about-block {
+        padding: 20px 20px 40px 20px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .about-block {
+        padding: 20px 0;
+    }
+}

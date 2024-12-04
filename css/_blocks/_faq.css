@@ -42,3 +42,54 @@
         opacity: 1;
     }
 }
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .faq-block {
+        padding: 0 60px;
+    }
+    .faq-content {
+        width: 820px;
+    }
+}
+
+/* Адаптируем под разрешение от 768 до 1024px */
+@media (max-width: 1024px) {
+    .faq-block {
+        padding: 0px 20px 40px 20px;
+    }
+    .faq-content {
+        width: 100%;
+    }
+    .question {
+        font-size: 18px;
+    }
+    .question-text {
+        font-size: 14px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    /* .faq-block {
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .question-container,
+    .question-text {
+        margin: 0 20px;
+    }
+    .question-text {
+        margin-bottom: 30px;
+    }
+    .faq-content {
+        margin-top: 20px;
+    }
+    .question-container img {
+        height: 14px;
+        margin-left: 10px;
+    }
+    .faq-content {
+        width: 400px;
+    } */
+}
