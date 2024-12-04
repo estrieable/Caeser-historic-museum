@@ -56,5 +56,33 @@
             "text-9": "Η αρχιτεκτονική του μουσείου έχει σχεδιαστεί για να συμπληρώνει τα αρχαία έργα που εκτίθενται. Το ίδιο το κτίριο είναι κατασκευασμένο με μάρμαρο και διαθέτει κίονες, καμάρες και άλλα στοιχεία αρχαίας ελληνικής αρχιτεκτονικής. Τα εκθέματα εκτίθενται σε ευρύχωρες γκαλερί με φυσικό φως, παρέχοντας στους επισκέπτες μια άνετη και καθηλωτική εμπειρία θέασης. Οι επισκέπτες του Μουσείου Ελληνικών Αγαλμάτων μπορούν να κάνουν ξεναγήσεις για να μάθουν περισσότερα για την ιστορία και τη σημασία της συλλογής. Το μουσείο προσφέρει επίσης εκπαιδευτικά προγράμματα για σχολεία και πανεπιστήμια, καθώς και ειδικές εκδηλώσεις και εκθέσεις καθ' όλη τη διάρκεια του έτους.",
             "text-10": "Συνολικά, το Μουσείο Ελληνικών Αγαλμάτων είναι ένας απαραίτητος προορισμός για όποιον ενδιαφέρεται για τον αρχαίο ελληνικό πολιτισμό και ιστορία. Η συλλογή αγαλμάτων και αντικειμένων του παρέχει μια ματιά σε μια από τις περιόδους με τη μεγαλύτερη επιρροή στον ανθρώπινο πολιτισμό και η αρχιτεκτονική και τα εκθέματά του δημιουργούν μια πραγματικά αξέχαστη εμπειρία."
         }
+    ],
+    "faq": [
+        {
+            "title": "Caeser Historic Museum",
+            "description": "FAQS",
+            "question-content": [
+                {
+                    "question-title": "Can visitors take pictures in the museum?",
+                    "question-text": "Generally, photography is allowed in Greek museums, but flash photography and tripods are usually prohibited. However, it's always best to check with the museum staff before taking any photographs.",
+                    "src": "img/arrow.svg"
+                },
+                {
+                    "question-title": "What types of artefacts can be found in the museum?",
+                    "question-text": "The museum features a variety of artefacts, including statues, sculptures, pottery, coins, jewelry, tools, funerary objects, architectural fragments, and religious items, reflecting ancient Greek culture and history.",
+                    "src": "img/arrow.svg"
+                },
+                {
+                    "question-title": "What time is the museum open?",
+                    "question-text": "The museum is open from 10:00 AM to 6:00 PM, with the last admission at 5:30 PM.",
+                    "src": "img/arrow.svg"
+                },
+                {
+                    "question-title": "Why is the museum named after Caeser?",
+                    "question-text": "The museum is named after Caesar to honor his significant contributions to the Roman Empire and culture, reflecting his role in history as a pivotal leader. The name may also signify the influence of Roman culture on the artefacts or exhibits within the museum, as Caesar represents the connection between ancient Greece and Rome.",
+                    "src": "img/arrow.svg"
+                }
+            ]
+        }
     ]
 }

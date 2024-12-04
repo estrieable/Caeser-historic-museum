@@ -16,6 +16,10 @@ const targetElement1 = document.querySelector('.explore-text-sculpture-1');
 const targetElement2 = document.querySelector('.explore-text-sculpture-2');
 const targetElement3 = document.querySelector('.explore-text-sculpture-3');
 const targetElement4 = document.querySelector('.explore-text-sculpture-4');
+const targetElement5 = document.querySelector('.about-block-title');
+const targetElement6 = document.querySelector('.about-block-description');
+const targetElement7 = document.querySelector('.about-text-content');
+const targetElement8 = document.querySelector('.faq-block');
 if (targetElement1) {
     observer.observe(targetElement1);
 }
@@ -27,6 +31,18 @@ if (targetElement3) {
 }
 if (targetElement4) {
     observer.observe(targetElement4);
+}
+if (targetElement5) {
+    observer.observe(targetElement5);
+}
+if (targetElement6) {
+    observer.observe(targetElement6);
+}
+if (targetElement7) {
+    observer.observe(targetElement7);
+}
+if (targetElement8) {
+    observer.observe(targetElement8);
 }
 
 // Отображение данных Home_____________________________
@@ -43,6 +59,8 @@ async function loadHomeData() {
         const exploreContentText4 = document.querySelector(".explore-text-sculpture-4-text");
         const aboutTitle = document.querySelector(".about-block-title");
         const aboutDescription = document.querySelector(".about-block-description");
+        const faqTitle = document.querySelector(".faq-block-title");
+        const faqDescription = document.querySelector(".faq-block-description");
 
         exploreTextElement.textContent = data.explore[0]['explore-text'];
         exploreTitleElement.textContent = data.explore[0]['explore-title'];
@@ -52,6 +70,8 @@ async function loadHomeData() {
         exploreContentText4.textContent = data.explore[0]['explore-content-text-3'];
         aboutTitle.textContent = data.about[0]['title'];
         aboutDescription.textContent = data.about[0]['description'];
+        faqTitle.textContent = data.faq[0]['title'];
+        faqDescription.textContent = data.faq[0]['description'];
     } catch (error) {
         console.error('Error loading data:', error);
     }
@@ -117,6 +137,58 @@ document.addEventListener('DOMContentLoaded', () => {
                     textContentElement.appendChild(paragraph);
                 }
             }
+        })
+        .catch(error => console.error('Error loading the JSON:', error));
+});
+
+// Отображение данных Faq___________________________________
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('./config/main-config.json')
+        .then(response => response.json())
+        .then(data => {
+            const faqData = data.faq[0];
+
+            const titleElement = document.querySelector('.faq-block-title');
+            const descriptionElement = document.querySelector('.faq-block-description');
+            titleElement.textContent = faqData.title;
+            descriptionElement.textContent = faqData.description;
+
+            const faqContent = document.querySelector('.faq-content');
+
+
+            faqData['question-content'].forEach(item => {
+                const questionContainer = document.createElement('div');
+                questionContainer.classList.add('question-container');
+
+                const questionText = document.createElement('p');
+                questionText.classList.add('question');
+                questionText.classList.add('title');
+                questionText.textContent = item['question-title'];
+
+                const arrowImage = document.createElement('img');
+                arrowImage.src = item.src;
+                arrowImage.alt = 'Arrow';
+
+                questionContainer.appendChild(questionText);
+                questionContainer.appendChild(arrowImage);
+                faqContent.appendChild(questionContainer);
+
+                const questionDetail = document.createElement('div');
+                questionDetail.classList.add('question-text');
+                questionDetail.classList.add('text');
+                questionDetail.textContent = item['question-text'];
+                questionDetail.style.display = 'none';
+                faqContent.appendChild(questionDetail);
+
+
+                questionContainer.addEventListener('click', () => {
+                    const questionImg = document.querySelector(".question-container img");
+                    const isVisible = questionDetail.style.display === 'block';
+                    questionDetail.style.display = isVisible ? 'none' : 'block';
+                    questionContainer.style.marginBottom = isVisible ? "50px" : "10px";
+                    arrowImage.style.transform = isVisible ? "rotate(0deg)" : "rotate(90deg)";
+                });
+            });
         })
         .catch(error => console.error('Error loading the JSON:', error));
 });
