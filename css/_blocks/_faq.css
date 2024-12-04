@@ -1,0 +1,44 @@
+.faq-block {
+    padding: 0 90px;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+
+.faq-block-title,
+.faq-block-description {
+    font-size: 24px;
+}
+
+.faq-content {
+    margin: auto;
+    margin-top: 40px;
+    width: 980px;
+}
+.question-container,
+.question-text {
+    margin: 0 80px;
+}
+.question-container {
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.question {
+    font-size: 24px;
+}
+.question-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.faq-block.animate {
+    animation: lookFAQ 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes lookFAQ {
+    100% {
+        opacity: 1;
+    }
+}

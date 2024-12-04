@@ -111,8 +111,8 @@
 .explore-text-sculpture-2.animate,
 .explore-text-sculpture-3.animate,
 .explore-text-sculpture-4.animate {
-    animation: lookText 3s ease forwards;
-    animation-delay: 1s;
+    animation: lookText 2s ease forwards;
+    animation-delay: 0.5s;
 }
 
 @keyframes lookText {
