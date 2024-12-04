@@ -4,8 +4,6 @@
     margin: 0 auto;
 }
 
-
-
 /* Explore Block__________________________________________ */
 .explore-block {
     margin-top: 190px;
@@ -86,25 +84,25 @@
 .explore-text-sculpture-1 {
     position: absolute;
     top: 420px;
-    right: 300px;
+    right: 385px;
     opacity: 0;
 }
 .explore-text-sculpture-2 {
     position: absolute;
     top: 500px;
-    left: 360px;
+    left: 440px;
     opacity: 0;
 }
 .explore-text-sculpture-3 {
     position: absolute;
     top: 820px;
-    left: 180px;
+    left: 260px;
     opacity: 0;
 }
 .explore-text-sculpture-4 {
     position: absolute;
     top: 920px;
-    right: 200px;
+    right: 280px;
     opacity: 0;
 }
 .explore-text-sculpture-1.animate,
@@ -127,5 +125,174 @@
     }
     50% {
         opacity: 1;
+    }
+}
+
+/* Адаптируем под разрешение от 1400 до 1600px */
+@media (max-width: 1600px) {
+    .main {
+        width: 1380px;
+    }
+    .explore-text-sculpture-1 {
+        right: 290px;
+    }
+    .explore-text-sculpture-2 {
+        left: 340px;
+    }
+    .explore-text-sculpture-3 {
+        left: 170px;
+    }
+    .explore-text-sculpture-4 {
+        right: 180px;
+    }
+}
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .main {
+        width: 1000px;
+    }
+    .explore-text-sculpture-1 {
+        right: 200px;
+    }
+    .explore-text-sculpture-2 {
+        left: 200px;
+    }
+    .explore-text-sculpture-3 {
+        left: 50px;
+    }
+    .explore-text-sculpture-4 {
+        right: 30px;
+    }
+    .explore-text-sculpture-1-text {
+        max-width: 320px;
+    }
+    .explore-text-sculpture-2-text {
+        max-width: 180px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 180px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 180px;
+    }
+}
+
+/* Адаптируем под разрешение от 768 до 1024px */
+@media (max-width: 1024px) {
+    .main {
+        width: 760px;
+    }
+    .explore-text-sculpture-1 {
+        right: 90px;
+    }
+    .explore-text-sculpture-2 {
+        left: 150px;
+    }
+    .explore-text-sculpture-3 {
+        left: 5px;
+    }
+    .explore-text-sculpture-4 {
+        right: 10px;
+    }
+    .explore-text-sculpture-1-text {
+        max-width: 300px;
+    }
+    .explore-text-sculpture-2-text {
+        max-width: 100px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 100px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 100px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+        padding: 0 10px;
+        height: 600px;
+    }
+    .explore-text {
+        font-size: 20px;
+    }
+    .explore-title {
+        font-size: 42px;
+    }
+    .explore-text-sculpture-1 {
+        right: 75px;
+        top: 315px;
+    }
+    .explore-text-sculpture-2 {
+        left: 40px;
+        top: 485px;
+    }
+    .explore-text-sculpture-3 {
+        left: 5px;
+        top: 620px;
+    }
+    .explore-text-sculpture-4 {
+        right: 15px;
+        top: 630px;
+    }
+    .explore-text-sculpture-1-text {
+        font-size: 14px;
+        max-width: 180px;
+    }
+    .explore-text-sculpture-2-text {
+        max-width: 100px;
+        font-size: 10px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 40px;
+        font-size: 10px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 30px;
+        font-size: 10px;
+    }
+}
+
+/* Адаптируем под разрешение до 425px */
+@media (max-width: 425px) {
+    .main {
+        height: 380px;
+    }
+    .explore-title {
+        font-size: 32px;
+    }
+    .explore-text-sculpture-1 {
+        right: 10px;
+        top: 270px;
+    }
+    .explore-text-sculpture-2 {
+        left: 20px;
+        top: 320px;
+    }
+    .explore-text-sculpture-3 {
+        left: 10px;
+        top: 405px;
+    }
+    .explore-text-sculpture-4 {
+        right: 0px;
+        top: 460px;
+    }
+    .explore-text-sculpture-1-text {
+        font-size: 10px;
+        max-width: 180px;
+    }
+    .explore-text-sculpture-2-text {
+        font-size: 8px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 100px;
+        font-size: 8px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 40px;
+        font-size: 8px;
     }
 }
