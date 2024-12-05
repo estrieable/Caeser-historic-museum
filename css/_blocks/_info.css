@@ -12,7 +12,6 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(6, 1fr);
-    justify-content: space-between;
 }
 .sculpture-item:nth-child(1) {
     margin-top: 210px;
@@ -36,6 +35,9 @@
 .sculpture-item-description {
     transform: translateY(270px);
     opacity: 0;
+}
+.sculpture-item {
+    margin: 0 auto;
 }
 .sculpture-text {
     margin-top: 10px;
