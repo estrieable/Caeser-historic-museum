@@ -155,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const faqContent = document.querySelector('.faq-content');
 
-
             faqData['question-content'].forEach(item => {
                 const questionContainer = document.createElement('div');
                 questionContainer.classList.add('question-container');
@@ -182,9 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 questionContainer.addEventListener('click', () => {
-                    const questionImg = document.querySelector(".question-container img");
                     const isVisible = questionDetail.style.display === 'block';
                     questionDetail.style.display = isVisible ? 'none' : 'block';
+                    if(!isVisible){
+                        setTimeout(()=>{questionDetail.classList.add('shown');}, 0);
+                    } else{
+                        questionDetail.classList.remove('shown');
+                    }
                     questionContainer.style.marginBottom = isVisible ? "50px" : "10px";
                     arrowImage.style.transform = isVisible ? "rotate(0deg)" : "rotate(90deg)";
                 });
