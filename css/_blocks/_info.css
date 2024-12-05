@@ -5,6 +5,7 @@
 }
 .sculpture-item-description {
     max-width: 183px;
+    opacity: 0;
 }
 .sculpture-grid {
     width: 100%;
@@ -32,10 +33,6 @@
     margin-top: 220px;
 }
 
-.sculpture-item-description {
-    transform: translateY(270px);
-    opacity: 0;
-}
 .sculpture-item {
     margin: 0 auto;
 }
@@ -44,13 +41,20 @@
 }
 .sculpture-img {
     margin-top: 20px;
-    transform: translateY(-270px);
     opacity: 0;
 }
 
-.sculpture-item-description.animate,
-.sculpture-img.animate {
-    animation: lookSculpture 1s ease-in-out forwards;
+@media (min-width: 769px) {
+    .sculpture-item-description.animate,
+    .sculpture-img.animate {
+        animation: lookSculpture 1s ease-in-out forwards;
+    }
+    .sculpture-item-description {
+        transform: translateY(270px);
+    }
+    .sculpture-img {
+        transform: translateY(-270px);
+    }
 }
 
 .sculpture-flow {
@@ -190,6 +194,12 @@
     }
 }
 
+@keyframes lookSculptureMobile {
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes animationFlow {
     0% {
         opacity: 0;
@@ -315,8 +325,11 @@
     .sculpture-item-description {
         max-width: 163px;
     }
+    .sculpture-item-description.animate,
+    .sculpture-img.animate {
+        animation: lookSculptureMobile 1s ease-in-out forwards;
+    }
 }
-
 
 /* Адаптируем под разрешение до 425px */
 @media (max-width: 425px) {
