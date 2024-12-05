@@ -18,6 +18,13 @@
 .question-text {
     margin: 0 80px;
 }
+.question-text {
+    opacity: 0;
+}
+.question-text.shown {
+    opacity: 1;
+    transition: opacity 1s linear;
+}
 .question-container {
     margin-bottom: 50px;
     cursor: pointer;
@@ -35,6 +42,10 @@
 .faq-block.animate {
     animation: lookFAQ 1s ease forwards;
     animation-delay: 0.5s;
+}
+
+.question-container img {
+    transition: transform 0.3s ease;
 }
 
 @keyframes lookFAQ {
