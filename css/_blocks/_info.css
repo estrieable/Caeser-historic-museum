@@ -44,7 +44,7 @@
     opacity: 0;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .sculpture-item-description.animate,
     .sculpture-img.animate {
         animation: lookSculpture 1s ease-in-out forwards;
@@ -292,6 +292,14 @@
     }
     .sculpture-item:nth-child(6) {
         margin-top: 130px;
+    }
+}
+
+/* Адаптируем под разрешение от 768px до 1024*/
+@media (max-width: 1024px) {
+    .sculpture-item-description.animate,
+    .sculpture-img.animate {
+        animation: lookSculptureMobile 1s ease-in-out forwards;
     }
 }
 
